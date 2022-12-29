@@ -55,3 +55,22 @@ def sum(user_input):
     return str1
 
 
+
+#Excersise 5
+def cubic_root(n):
+    # n is a positive integer
+    i = 0
+    pr = 0
+    prold=0
+    while i < n:
+        pr = i**3
+        if pr > n:
+            prold=(i-1)**3
+            break
+        i=i+1
+    if(pr>n):
+      return  print(i-1,", not exact with a difference of", n-prold)
+    else: return print (i-1,"exact!")
+
+userinput = int(input("Enter a number: "))
+cubic_root(userinput)
