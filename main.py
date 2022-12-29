@@ -21,3 +21,16 @@ def is_square_root(x,y):
 x=4
 y=2
 print (is_square_root(x,y))
+
+
+
+#Excersie 3
+
+def odd_sum(n):
+    abs(n)
+    sum1=0
+    while (n>0):
+        if(n%2!=0):
+            sum1 =sum1+n
+        n= n-1
+    return sum1
