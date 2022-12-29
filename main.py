@@ -34,3 +34,24 @@ def odd_sum(n):
             sum1 =sum1+n
         n= n-1
     return sum1
+
+
+#Excersise 4
+
+def sum(user_input):
+
+    str1=""
+    sum1=0
+    i=0
+    while(i<user_input):
+        sum1+=user_input
+        if(i==user_input-1):
+            str1=str1+str(user_input)+" = "+str(sum1)
+        elif(i<user_input):
+            str1=str1+str(user_input)+" + "
+
+        i+=1
+  
+    return str1
+
+
