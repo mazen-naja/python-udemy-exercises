@@ -74,3 +74,33 @@ def cubic_root(n):
 
 userinput = int(input("Enter a number: "))
 cubic_root(userinput)
+
+
+
+  
+#Excersie 6
+
+def perfect(number): #The variable "value" represent the value of the integer number entered by the user
+    #Decalre a bool variable isperfect and initialize it to false
+      
+    is_perfect = False
+   
+   # Declare a variable sum and initialize it to zero
+      
+    sum = 0
+         
+   
+    #1- Check if "number" is non-positive.  
+    #2- If not, find the proper divisors of "number" and find their sum 
+    for i in range (1,number):
+       if (number%i==0):
+            sum+=i
+            
+ 
+    
+   #-3- Check if their sum is equal to "number"  
+    if (number==sum):
+        is_perfect = True
+
+    return is_perfect
+
